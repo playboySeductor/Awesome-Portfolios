@@ -18,10 +18,10 @@ Here are a few things that will help us to resolve your issues:
 
 <br>
 
-- Fork this repository
-- Clone this repository
-- Create a new branch: `git checkout -b my-branch-name`
-- Make appropriate changes
+- Fork this repository by clicking the Fork button in the top right of this page
+- Clone your forked repository
+- Create a new branch: `git checkout -b new-branch-name`
+- Make appropriate changes or upload your portfolio web application
 - Commit the changes
 - Push to your branch and PR
 - Wait for your pull request to be reviewed and merged!  
