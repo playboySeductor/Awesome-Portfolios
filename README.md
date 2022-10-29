@@ -1,8 +1,8 @@
 <h1 align="center">AWESOME PORTFOLIOS 🚀</h1>
 
 <div align="center">
-    <img alt="Desktop" title="#Desktop" src="https://cdn.dribbble.com/users/1048991/screenshots/15293127/media/6c1ec520c52364db8373b199e5f7d81e.jpg" width="400px" />
-    <img alt="Desktop" title="#Desktop" src="https://5.imimg.com/data5/MH/FQ/OV/SELLER-52007146/personal-portfolio-website-1000x1000.jpg" width="400px" />
+    <img alt="Desktop" title="#sample-portfolio-1" src="https://cdn.dribbble.com/users/1048991/screenshots/15293127/media/6c1ec520c52364db8373b199e5f7d81e.jpg" width="400px" />
+    <img alt="Desktop" title="#sample-portfolio-2" src="https://s3-alpha.figma.com/hub/file/2401248454/90075a44-befa-4c2f-a2ae-5b2130dad1ca-cover.png" width="400px" />
 </div>
 
 ## Table of Contents
