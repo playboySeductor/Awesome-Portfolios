@@ -1,0 +1,262 @@
+body {
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+/* to remove all the resedual margins */
+
+
+
+
+
+
+.text-center {
+	text-align: center;
+}
+
+
+section {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* works along cross axis */
+}
+
+.top-and-bottom-margin {
+	margin: 50px 0px;
+}
+
+section:nth-child(2n) {
+	background-color: rgb(245, 244, 244);
+}
+
+section:nth-child(2n + 1) {
+	background-color: white;
+}
+
+.section-heading {
+	width: auto;
+	padding: 20px 10px 10px;
+	font-weight: 400;
+}
+
+.section-heading span {
+	font-size: 40px;
+	color: red;
+	display: inline-block;
+}
+
+.section-heading span img {
+	width: 40px;
+	height: 40px;
+	/* to adjust skills image size */
+}
+/* skills */
+
+
+/* timeline */
+
+.timeline-divider {
+	position: absolute;
+	height: 90%;
+	width: 0%;
+	border: 1px dashed #784eff;
+	top: 5%;
+	left: 50%;
+}
+
+.timeline-traveller {
+	position: sticky;
+	top: 20%;
+	transform: rotate(90deg);
+	z-index: 2;
+}
+
+.timeline {
+	position: relative;
+	width: 75%;
+}
+
+.timeline-box {
+	position: relative;
+	width: 46%;
+	min-height: 150px;
+	background-color: rgb(245, 245, 245);
+	margin: 5px;
+	left: -5%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	overflow-wrap: break-word;
+}
+
+.timeline-box:nth-child(2n + 1)::after {
+	content: "";
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	right: -19.5%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: red;
+	z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after {
+	content: "";
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: -19.5%;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: red;
+	z-index: 1;
+}
+
+.timeline-box:nth-child(2n + 1) {
+	align-items: flex-end;
+}
+
+.timeline-box:nth-child(2n) {
+	left: 58%;
+}
+
+.timeline-box:nth-child(2n + 1) .timeline-box-headings span:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.timeline-box:nth-child(2n) .timeline-box-headings span:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.timeline-box-headings span img {
+	height: 50px;
+	width: 50px;
+	margin: 10px;
+}
+
+.timeline-box-title {
+	color: #0000a9;
+	font-weight: 900;
+	font-size: 20px;
+	font-family: sans-serif;
+	width: 100%;
+	overflow-wrap: break-word;
+}
+
+.timeline-box-headings {
+	display: flex;
+	flex-direction: row;
+}
+
+.timeline-box-title:nth-child(2n + 1) {
+	text-align: right;
+}
+
+.timeline-box-title:nth-child(2n) {
+	text-align: left;
+}
+/* .timeline-box:nth-child(2n+1) .timeline-box-headings span:nth-child(2)
+{
+    position:relative;
+    align-items:flex-end;
+    flex-wrap: wrap;
+    margin: 13px;
+}
+.timeline-box:nth-child(2n) .timeline-box-headings span:nth-child(2)
+{
+    position:relative;
+    align-items:flex-start;
+} */
+
+.timeline-box-company-name {
+	color: orange;
+	font-size: large;
+	font-family: comic sans ms;
+	font-weight: bold;
+}
+
+.timeline-box-duration {
+	color: darkslategrey;
+}
+
+.timeline-box-headings {
+	margin: 20px;
+}
+
+.timeline-box-description {
+	margin: auto auto 20px;
+	width: 80%;
+	text-align: justify;
+	justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+	.timeline-divider {
+		left: 5%;
+	}
+	.timeline-box {
+		left: 12% !important;
+		width: 80%;
+	}
+	/* .timeline-box:nth-child(2n) {
+        left: 12%;
+    } */
+	.timeline-box:nth-child(2n + 1) {
+		align-items: flex-start;
+	}
+	.timeline-box::after {
+		left: -10.5% !important;
+	}
+	/* .timeline-box:nth-child(2n+1)::after {
+        left: -10.5%;
+    }
+    .timeline-box:nth-child(2n)::after {
+        left: -10.5%;
+    } */
+	html {
+		font-size: 15px;
+	}
+	.timeline-box:nth-child(2n + 1) .timeline-box-headings span:nth-child(2) {
+		align-items: flex-start !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.timeline-divider {
+		left: 5%;
+	}
+	.timeline-box {
+		left: 12% !important;
+		width: 80%;
+	}
+	/* .timeline-box:nth-child(2n) {
+        left: 12%;
+    } */
+	.timeline-box:nth-child(2n + 1) {
+		align-items: flex-start;
+	}
+	.timeline-box::after {
+		left: -11.5% !important;
+	}
+	/* .timeline-box:nth-child(2n+1)::after {
+        left: -10.5%;
+    }
+    .timeline-box:nth-child(2n)::after {
+        left: -10.5%;
+    } */
+	html {
+		font-size: 15px;
+	}
+	.timeline-box:nth-child(2n + 1) .timeline-box-headings span:nth-child(2) {
+		align-items: flex-start !important;
+	}
+}
+/* portfolio */
+
