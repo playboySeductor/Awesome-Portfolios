@@ -853,6 +853,7 @@ span11:hover {
     .home-text p {
         font-size: 0.825rem;
         /* margin-bottom: 1.5rem; */
+        flex-wrap: wrap;
 
     }
 
