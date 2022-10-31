@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="date.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="display">
+            <div id="time"></div>
+        <p id="prompt">for Hacktober to end</p>
+        </div>
+        <span></span>
+        <span></span>
+         
+    </div>
+    <div>
+        <script>
+            var dest = new Date("Nov 1, 2022 00:00:00").getTime();
+            var x = setInterval(function() {
+            var now = new Date().getTime();
+            var diff = dest - now;
+            var days = Math.floor(diff/ (60*60*24*1000));
+            var hours = Math.floor((diff % (60*60*24*1000)) / (1000*60*60));
+            var minutes = Math.floor((diff % (60*60*1000)) / (1000*60));
+            if(days < 10)
+                days = "0" + days;
+            if(hours < 10)
+                hours = "0" + hours;
+            if(minutes < 10)
+                minutes = "0" + minutes;
+            document.getElementById("time").innerHTML = days+" days "+hours+" hours "+minutes+" minutes"
+            }, 1000);
+        </script>
+        
+    </div> 
+</body>
+</html>
